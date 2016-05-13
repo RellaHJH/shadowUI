@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复选框，单选框，下拉框 </title>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<br>
+		<span class="radio"><input type="radio"></span>单选框1 &nbsp;&nbsp;|&nbsp;&nbsp; 
+		<span class="radio"><input type="radio"></span>单选框2 &nbsp;&nbsp;|&nbsp;&nbsp; 
+		<span class="radio"><input type="radio"></span>单选框3 &nbsp;&nbsp;|&nbsp;&nbsp; 
+
+		 <span class="checkbox"><input type="checkbox"></span>复选框1 &nbsp;&nbsp;|&nbsp;&nbsp; 
+		 <span class="checkbox"><input type="checkbox"></span>复选框2 &nbsp;&nbsp;|&nbsp;&nbsp; 
+		 <span class="checkbox checkbox-select"><input type="checkbox"></span>复选框3 &nbsp;&nbsp;|&nbsp;&nbsp; 
+
+		<br><br>
+		 &nbsp;&nbsp; 
+		<div class="sel_wrap">
+			<label>下拉框</label>
+			<ul name="" id="c_city">
+			<li value="1">中山市</li>
+			<li value="2">太原市</li>
+			<li value="3">广州市</li>
+			</ul>
+		</div>
+		&nbsp;&nbsp;| &nbsp;&nbsp;
+
+		<span class="combox" >
+			<select id="level" name="jqfbForm.policeSituationLevel" >
+				<option selected="selected" value="0">全部</option>
+				<option selected="selected" value="0">全部</option>
+				<option selected="selected" value="0">全部</option>
+			</select>
+			<a href="javascript:;" ></a>
+		</span>
+    	<span class="margin-supple"></span>
+		<br><br>
+
+
+
+		<input type="button" class="btn btn-success" value="我是input按钮"/> 
+		<input type="button" class="btn btn-default" value="Defaul"> 
+		<input type="button" class="btn btn-primary" value="Primary">
+		<input type="button" class="btn btn-success" value="Success ">		
+		<input type="button" class="btn btn-info" value="Info">
+		<input type="button" class="btn btn-warning" value="Warning ">		
+		<input type="button" class="btn btn-danger" value="Danger">
+		<!-- <a href="#" class="btn btn-success" >我是A连接</a>  -->
+		<input type="button" class="btn btn-link" value="（链接）Link ">
+
+		<br><br>
+		<p><input type="text" value=""><br><br> </p>
+		<div class="input-group">
+			<input type="text" value="Default">
+			<input type="text" value="Error" class="errow">
+			<input type="text" value="Success" class="success">
+			<input type="text" value="Disabled" class="disabled">
+			<input type="text" value="inactive" class="inactive">
+		</div>
+		<br><br>
+		<textarea style="width:500px;height:60px;"> </textarea>
+		<br><br>
+		<span class="input-group text-upload-group">
+			<input class="text-upload" type="text"  readonly="">
+			<a href="javascript:;" class="btn btn-primary"><i class="icon-upload"></i>浏览文件</a>
+			<input type="file" multiple="" name="file-1" class="input-file">
+		</span>
+
+
+		<script type="text/javascript">
+			$(function(){
+				$(".radio").click(function(){
+					$(".radio-select").removeClass("radio-select");
+					$(this).addClass("radio-select");
+				});
+
+				$(".checkbox").click(function(){
+					$(this).toggleClass("checkbox-select");
+				});
+
+				$(".sel_wrap").click(function(){
+					$("#c_city").toggle();
+				});
+				$(".sel_wrap li").click(function(){
+					$(this).parent().parent().find("label").text($(this).text());
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css  Panl</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<style>
+			body{overflow:auto;}
+			.menubox{float:left;width:15%;}
+			.center{float:left;width:83%;height:80%;padding-left:1%;padding-top:10px;}
+			.jumbotron {
+			  position: relative;
+			  padding:5px;
+			  color: #fff;
+			  text-align: center;
+			  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+			  background: #3D3A79;
+			  background: -moz-linear-gradient(45deg, #3D3A79 0%, #743C5B 100%);
+			  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#3D3A79), color-stop(100%,#743C5B));
+			  background: -o-linear-gradient(45deg, #3D3A79 0%,#743C5B 100%);
+			  background: -ms-linear-gradient(45deg, #3D3A79 0%,#743C5B 100%);
+
+			}
+			.jumbotron h1{margin:5px;font-size:20px;}
+			.blackmenu .menubox .menulist ul{display:none;}
+
+			
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				var m=new Menus();
+				m.addEvent();
+			})
+			
+		</script>
+	</head>
+
+	<body>
+
+		<div class="jumbotron">
+			<h1>CSS 皮肤</h1>
+		</div>
+	<div class="content blackmenu">
+		<div class="menubox">
+		    <div class="menulist">
+		      	<h1 class="menutitle" id="menutitle"><a href="javascript:void(0)"> 表单元素 </a></h1>
+		        <ul style="display:block;">
+		          <li><a href="css-from.html" target="iframe">表单</a></li>
+		          <li><a href="css-fileload.html" target="iframe">文件上传</a></li>		         
+		        </ul>
+		    </div>
+	      
+	      <div class="menulist">
+	      	<h1 class="menutitle"><a href="javascript:void(0)"> 布局</a></h1>
+	        <ul>
+			 	<li><a href="css-tabs.html" target="iframe">选项卡</a></li>
+	          	<li><a href="css-panel.html" target="iframe">折叠、内容块面板</a></li>
+	          	<li><a href="page1.html" target="iframe">分页</a></li>
+	          	<li><a href="css-tips.html" target="iframe">tips 提示</a></li>     
+	          	<li><a href="css-tags.html" target="iframe"> Tags 标签</a></li>   
+	          	<li><a href="css-img1.html" target="iframe"> 图片放大</a></li>    
+	        </ul>
+	      </div>
+
+			<div class="menulist">
+	      	<h1 class="menutitle"><a href="javascript:void(0)"> 菜单</a></h1>
+	        <ul>
+	          <li><a href="css-menu.html" target="iframe">手风琴折叠菜单(默认)</a></li> 
+	          <li><a href="css-menu2.html" target="iframe">手风琴菜单(黑色)</a></li> 
+	          <li><a href="css-menu3.html" target="iframe">菜单(简单白)</a></li> 
+	          <li><a href="css-.html" target="iframe"> 面包屑菜单</a></li>
+	          <li><a href="css-.html" target="iframe"> 导航菜单</a></li>
+	        </ul>
+	      </div>
+	      
+	      <div class="menulist">
+	      	<h1 class="menutitle"><a href="javascript:void(0)"> 表格</a></h1>
+	        <ul>
+	          <li><a href="css-table.html" target="iframe">简单表格</a></li>
+	          <li><a href="javascript:void(0);" target="iframe">表格操作</a></li>
+	        </ul>
+	      </div>
+
+		<div class="menulist">
+	      	<h1 class="menutitle"><a href="javascript:void(0)"> 消息窗口</a></h1>
+	        <ul>
+	          <li><a href="javascript:void(0);" target="iframe">简单弹出窗</a></li>
+	          <li><a href="javascript:void(0);" target="iframe">消息框</a></li>
+	          <li><a href="css-progress.html" target="iframe"> 进度条</a></li>
+	        </ul>
+	    </div>
+	        
+	      <div class="menulist">
+	      	<h1 class="menutitle"><a href="javascript:void(0)"> 树形</a></h1>
+	        <ul>
+	          <li><a href="javascript:void(0);" target="iframe">基本树</a></li>
+	          <li><a href="javascript:void(0);" target="iframe">编辑tree</a></li>
+	          <li><a href="javascript:void(0);" target="iframe">图标树</a></li>
+	        </ul>
+	      </div>
+
+     
+	    </div> 
+
+		<div class="center">
+			<iframe src="" name="iframe" frameborder=0 width="100%" height="500" scrolling="no"> </iframe>
+		</div>
+	</div>	
+	
+<br>
+
+	</body>
+</html>

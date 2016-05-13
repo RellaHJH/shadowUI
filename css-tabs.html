@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css 样式复用板块 Panl</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	</head>
+
+	<body>
+
+
+		<div class="tabs-container">
+			<ul class="tabstitle" >
+				<li class="onselect" page="tab1">列表一</li>
+				<li page="tab2">列表二</li>
+				<li page="tab3">列表三</li>
+			</ul>
+			<div class="tabpage" style="display:block;width:196px;border:solid 1px #ddd">
+				
+				【这是选项卡页面一】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+			</div>
+		</div>
+		<br><br><br>
+
+		<div class="tabs-container gradient-tab">
+			<ul class="tabstitle" id="tabstitle">
+				<li class="onselect" page="tab1">列表一</li>
+				<li page="tab2">列表二</li>
+				<li page="tab3">列表三</li>
+			</ul>
+			<div id="tab1" class="tabpage" style="display:block;">
+				【这是选项卡页面一】。</div>
+			<div id="tab2" class="tabpage">这是选项卡页面二</div>
+			<div id="tab3" class="tabpage">
+				这是选项卡页面三<br>•complete framework for HTML5 web page.<br>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$("#tabstitle li").click(function(){
+					$("#tabstitle li").removeClass("onselect");
+					$(this).addClass("onselect");
+					$(".tabpage").hide();
+					$("#"+$(this).attr("page")).show();
+					$("#"+$(this).attr("page")).show();
+				});
+			})
+		</script>
+
+		<div class="tabs-container gray-tab">
+			<ul class="tabstitle" >
+				<li class="onselect" page="tab1">列表一</li>
+				<li page="tab2">列表二</li>
+				<li page="tab3">列表三</li>
+			</ul>
+		</div>
+<br>
+		
+
+
+	</body>
+</html>

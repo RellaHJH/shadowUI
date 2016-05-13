@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css 样式复用板块 menu</title>
+		<link href="css/style.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript">
+			var jsonlist={
+				menulist:[{
+			        "id":1,
+			        "text":"father菜单（一）", 
+			        "list":[{"id":"001","text":"child菜单(1)","url":"index.html"},
+			        		{"id":"002","text":"child菜单(2)","url":"www.baidu.com"},
+			        		{"id":"002","text":"child菜单(3)","url":"www.baidu.com"},
+			        		{"id":"001","text":"child菜单(4)","url":"www.baidu.com"},
+			        		{"id":"002","text":"child菜单(5)","url":"www.baidu.com"},
+			        		{"id":"002","text":"child菜单(6)","url":"www.baidu.com"}]
+			    },
+			    {
+			        "id":1,
+			        "text":"father菜单（二）", 
+			        "list":[{"id":"001","text":"child菜单(一)","url":"www.baidu.com"},{"id":"002","text":"child菜单(二)","url":"www.baidu.com"}]
+			    },
+			     {
+			        "id":1,
+			        "text":"father菜单（三）", 
+			        "list":[{"id":"001","text":"child菜单(一)","url":"www.baidu.com"},{"id":"002","text":"child菜单(二)","url":"www.baidu.com"}]
+			    },
+			    {
+			        "id":1,
+			        "text":"father菜单（四）",
+			        "url":"index.html"
+			    }
+			]};
+
+			$(function(){
+				var menuCon=new Menus();
+				//menuCon.itemIcon="img/icon.png";
+				menuCon.loadMenu(jsonlist.menulist,"menupanel");
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="menupanel" ></div>
+	</body>
+</html>
